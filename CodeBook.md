@@ -19,7 +19,39 @@ You should create one R script called run_analysis.R that does the following
 5. From the data set in step 4, creates a second, independent tidy data set with the average 
 of each variable for each activity and each subject.
 
-Download data
+# Data
+
+### From original source but Descriptive Variable names:
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (TimeDomain_BodyAcceleration-XYZ and TimeDomain_GravityAcceleration-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals. Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (TimeDomain_BodyAccelerationMagnitude, TimeDomain_GravityAccelerationMagnitude, TimeDomain_BodyAccelerationJerkMagnitude, TimeDomain_BodyGyroscopeMagnitude, TimeDomain_BodyGyroscope_JerkMagnitude)
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing FrequencyDomain_BodyAcceleration-XYZ, FrequencyDomain_BodyAccelerationJerk-XYZ, FrequencyDomain_BodyGyroscope-XYZ, FrequencyDomain_BodyAccelerationJerkMagnitude, FrequencyDomain_BodyGyroscopeMagnitude, FrequencyDomain_BodyGyroscopeJerkMagnitude.
+
+### The data used
+The variables used where only mean and standard deviation from the respective original variables:
+TimeDomain_BodyAcceleration_mean_X
+TimeDomain_BodyAcceleration_mean_Y
+TimeDomain_BodyAcceleration_mean_Z
+TimeDomain_BodyAcceleration_standard_deviation_X
+TimeDomain_BodyAcceleration_standard_deviation_Y
+TimeDomain_BodyAcceleration_standard_deviation_Z
+TimeDomain_GravityAcceleration_mean_X
+TimeDomain_GravityAcceleration_mean_Y
+TimeDomain_GravityAcceleration_mean_Z
+TimeDomain_GravityAcceleration_standard_deviation_X
+TimeDomain_GravityAcceleration_standard_deviation_Y
+TimeDomain_GravityAcceleration_standard_deviation_Z
+... And more see file 
+
+### The tidy data set
+It contains the average for each variable per activity and subject
+
+
+
+# Steps performed to tidy data
+
+## Download data
 
 ```R
 file_Url<-'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
