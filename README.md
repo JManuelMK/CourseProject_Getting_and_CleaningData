@@ -31,3 +31,6 @@ The R file contains the code to solve the assignment and an explanation of the c
 
 ## CodeBook.md
 The file CodeBook.md contains the code and similar explanations as in run_analyisis.R but it is markdown format
+
+## Results
+The text files are the output files to solve assignment
