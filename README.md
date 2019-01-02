@@ -27,10 +27,10 @@ You should create one R script called run_analysis.R that does the following.
 of each variable for each activity and each subject.'
 
 ## run_analysis.R
-The R file contains the code to solve the assignment and an explanation of the commands
+The R file contains the code to solve the assignment and an explanation of the commands.
 
 ## CodeBook.md
-The file CodeBook.md contains the code and similar explanations as in run_analyisis.R but it is markdown format
+The file CodeBook.md contains the code and similar explanations as in run_analyisis.R but it is markdown format.
 
 ## Results
-The text files are the output files to solve assignment
+The text files are the output files to complete the assignment.
