@@ -33,4 +33,4 @@ The R file contains the code to solve the assignment and an explanation of the c
 The file CodeBook.md contains the code and similar explanations as in run_analyisis.R but it is markdown format.
 
 ## Results
-The text files are the output files to complete the assignment.
+The text files are the output files to complete the assignment. The file AverageVariables_ByActivity_and_Subject.txt is the tidy data set.
